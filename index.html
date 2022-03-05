@@ -11,7 +11,7 @@
 
 <body>
     <div class="navbar">
-    <div class="contain">
+    <div class="container">
         <a class="logo" href="#">Remember<span>That</span></a>
         <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="open navigation">
         <nav>
@@ -23,7 +23,7 @@
             </ul>
             <ul class="second-nav">
                 <li><a href="#">contact</a></li>
-                <li class="Go-premuin-cta"><a href="#"> Go premuim</a></li>
+                <li class="go-premuim-cta"><a href="#"> Go premuim</a></li>
 
             </ul>
         </nav>
@@ -31,7 +31,7 @@
     </div>
     <section class="hero">
 
-        <div class="container">
+      <div class="container">
             <div class="left-col">
                 <p class="subhead">It's Nitty &amp; Gritty</p>
                 <h1>A task App that Doesn't stink</h1>
@@ -41,13 +41,13 @@
                     <img src="images/watch.svg" alt="watch video">whatch a video
                 </a>
             </div>
-            <img src="images/illustration.svg" class="hero-image" alt="ullistration">
-        </div>
-
+            <img src="images/illustration.svg" class="hero-img" alt="ullistration">
+         
+     </div>
     </section>
-    <section class="feature-section"></section>
+    <section class="feature-section">
     <div class="container">
-        <ul>
+        <ul class="feature-list">
             <li>ulimited.tasks</li>
             <li>sms.tasks Reminder</li>
             <li>confetti explosions upon </li>
@@ -56,9 +56,11 @@
             <li>other awasome feature</li>
 
         </ul>
+        
         <img src="images/holding-phone.jpg" alt="Man holding phone">
 
     </div>
+</section>
     <section class="testimonial-section">
         <div class="container">
             <ul>
@@ -112,6 +114,17 @@
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" frameborder="0"></iframe>
         </div>
     </section>
+    <script>
+        const mobileBtn =document.getElementById('mobile-cta')
+    nav = document.querySelector('nav');
+    mobileBtnExit = document.getElementById('mobile-exit')
+    mobileBtn.addEventListener('click',() =>{
+        nav.classList.add('menu-btn');
+    })
+    mobileBtnExit.addEventListener('click',() =>{
+        nav.classList.remove('menu-btn');
+    })
+    </script>
 </body>
 
 </html>
